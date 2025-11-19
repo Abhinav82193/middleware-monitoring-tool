@@ -7,9 +7,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 
     @GetMapping("/health")
-    public String health() {
-        return "BHAI SERVER LIVE HAI ❤️\n" +
-               "TU AB JAVA SPRING BOOT DEVELOPER HAI!!! 🔥\n" +
-               "18 NOV 2025 - YE DIN YAAD RAKHNA!";
-    }
+public String health() {
+    return """
+           {
+             "status": "UP",
+             "message": "Middleware Monitoring Tool is running smoothly!",
+             "developer": "From Support Engineer to Java Developer❤️"
+           }
+           """;
+}
 }
